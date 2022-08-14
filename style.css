@@ -3,11 +3,17 @@
   src: url(Norse-Bold.otf);
 }
 
+:root {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: whitesmoke;
 }
 
 .container {
@@ -35,9 +41,125 @@ body {
   font-family: odin-font, sans-serif;
   color: white;
   margin: auto;
+  background-color: hsl(0,0%,0%, 0.5);
+  font-size: 2cm;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.left h1::before {
+  content: url('image/odin-lined.png');
+  zoom: 15%;
+  position: relative;
+  top: 50px;
 }
 
 .left footer {
   color: white;
   margin-top: auto;
 }
+
+.right {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header h2 {
+  font-size: 1.3rem;
+}
+
+.header {
+  margin-top: -50px;
+  margin-left: 60px;
+  margin-right: 100px;
+  margin-bottom: 20px
+}
+
+.fh {
+  margin-top: 250px;
+}
+
+/* form {
+  height: 55vh;
+} */
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  height: 410px;
+  background-color: white;
+  border: none;
+  position: relative;
+}
+
+legend {
+  position: relative;
+  left: 38px;
+  top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+input {
+  width: 350px;
+  border-radius: 10px;
+  padding: 6px 15px;
+  border-color: gray;
+  border-style: solid;
+  font-size: 0.8rem;
+}
+
+fieldset div > label {
+  display: block;
+  margin-top: 30px;
+  font-size: medium;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+label, input {
+  margin-left: 40px;
+  margin-right: 100px;
+}
+
+input:focus {
+  border: blue solid;
+}
+
+button[type="submit"] {
+  padding: 15px 50px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #596D48;
+  font-family: odin-font;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.acc, button[type="submit"] {
+  margin-left: 55px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.acc > button {
+  border: none;
+  color: #596D48;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: none;
+  font-size: 1.1rem;
+  background-color: inherit;
+}
+
+.acc {
+  font-size: 1.1rem
+}
+
+
